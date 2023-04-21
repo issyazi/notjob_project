@@ -11,20 +11,32 @@
     <div class = "container">
         <header class = "header">
             <div class = "header_container">
-                <a href="index.html"> notjob </a>
+                <p href="index.html" class = "logo"> notjob </p>
                 <form action="" method="get">
                     <input name="s" placeholder="Искать здесь..." type="search">
                     <button type="submit">Поиск</button>
                 </form>
-                
                 <div class = "navigation">
-                    <a href="catalog.html"> каталог </a>
-                    <a href="sign_in.html"> войти </a>
-                    <a href="sign_up.html"> зарегистрироваться </a>
-                    <a> язык </a>
+                    <form action="catalog.html" target="_blank">
+                        <button class="header_btn"> каталог </button>
+                    </form>
+                    <form action="sign_in.html" target="_blank">
+                        <button class="header_btn"> войти </button>
+                    </form>
+                    <form action="sign_up.html" target="_blank">
+                        <button class="header_btn"> зарегистрироваться</button>
+                    </form>
+                    <div class="dropdown">
+                        <button class="dropbtn">язык</button>
+                        <div class="dropdown-content">
+                          <a href="#">Английский</a>
+                          <a href="#">Русский </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
+        <script src="js/header.js"></script>
     </div>
     <script src="./js/header.js"></script>
     <div class ="container" class = "sign_up">
@@ -36,10 +48,15 @@
         <input class = "enter" name="email" placeholder="Введите электронную почту">
         <label>username*</label>
         <input class = "enter" name="email" placeholder="Введите электронную почту">
-        <label>gender*</label>
-        <input class = "enter" name="email" placeholder="Введите электронную почту">
-        <label>birthay*</label>
-        <input class = "enter" name="email" placeholder="Введите электронную почту">
+        <p>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+        </p>
+        <p>
+            <label for="date">Дата рождения: </label>
+            <input type="date" id="date" name="date"/>
+        </p>
         <label>e-mail*</label>
         <input type="email" class = "enter" name="email" placeholder="Введите электронную почту">
         <label>password*</label>
