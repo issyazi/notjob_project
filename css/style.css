@@ -1,0 +1,33 @@
+.header_container{
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.container {
+    font-size: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sign_up {
+    display: flex;
+}
+
+.enter {
+    width: 100%;
+    height: 38px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    padding-left: 25px;
+}
