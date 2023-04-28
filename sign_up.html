@@ -6,16 +6,14 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>notjob - find not a job</title>
+    <script defer src="js/validation_reg.js"></script>
 </head>
 <body>
+
     <div class = "container">
         <header class = "header">
             <div class = "header_container">
                 <p href="index.html" class = "logo"> notjob </p>
-                <form action="" method="get">
-                    <input name="s" placeholder="Искать здесь..." type="search">
-                    <button type="submit">Поиск</button>
-                </form>
                 <div class = "navigation">
                     <form action="catalog.html" target="_blank">
                         <button class="header_btn"> каталог </button>
@@ -36,37 +34,60 @@
                 </div>
             </div>
         </header>
-        <script src="js/header.js"></script>
     </div>
-    <script src="./js/header.js"></script>
-    <div class ="container" class = "sign_up">
-        <label style="margin-top: 30px;">Login*</label>
-        <input type="text" class = "enter" name="login" placeholder="Введите логин">
-        <label>name*</label>
-        <input class = "enter" name="email" placeholder="Введите электронную почту">
-        <label>surname*</label>
-        <input class = "enter" name="email" placeholder="Введите электронную почту">
-        <label>username*</label>
-        <input class = "enter" name="email" placeholder="Введите электронную почту">
-        <p>
-            <input type="radio" name="gender" value="male"> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br>
-            <input type="radio" name="gender" value="other"> Other
-        </p>
-        <p>
-            <label for="date">Дата рождения: </label>
-            <input type="date" id="date" name="date"/>
-        </p>
-        <label>e-mail*</label>
-        <input type="email" class = "enter" name="email" placeholder="Введите электронную почту">
-        <label>password*</label>
-        <input type="password" class = "enter" name="password" placeholder="Введите пароль">
-        <label>repeat password*</label>
-        <input type="password" class = "enter" name="password_repeat" placeholder="Введите пароль еще раз">
-        <button type="submit" class = "register-btn">Ready</button>
-        <p style="margin-top: 20px;">
-        Have account yet? - <a href="login.php" class = "back">Enter</a>
-        </p>
-    </div>
+
+    <div class="container">
+        <form id="form" action="/">
+            <div class="input-control">
+                <label for="login">Login</label>
+                <input id="login"name="login" type="text" placeholder="Введите логин">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="name">Name</label>
+                <input id="name"name="name" type="text" placeholder="Введите имя">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="surname">Surname</label>
+                <input id="surname"name="surname" type="text" placeholder="Введите фамилию">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Введите никнейм">
+                <div class="error"></div>
+            </div>
+                <div class="input-control">
+                    <label for="birthday">birthday</label>
+                    <input  min="1930-01-01"max="2005-01-01" type="date" id="birthday" name="birthday" placeholder="Введите дату рождения">
+                    <div class="error"></div>
+                </div>
+                <!-- <div class="input-control">
+                    <select>
+                        <option>Мужчина</option>
+                        <option>Женщина</option>
+                        <option>Другое</option>
+                    </select>
+                    <div class="error"></div>
+                </div> -->
+                <!-- Не уверен в необходимости (Позже?) -->
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Введите электронную почту">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password" placeholder="Введите пароль">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password" placeholder="Введите пароль еще раз">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Ready</button>
+        </div>
 </body>
 </html>
