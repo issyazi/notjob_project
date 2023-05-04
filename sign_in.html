@@ -6,16 +6,14 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>notjob - find not a job</title>
+    <script defer src="js/validation_input.js"></script>
 </head>
 <body>
-    <div class = "container">
+
+    <div class="container">
         <header class = "header">
             <div class = "header_container">
                 <p href="index.html" class = "logo"> notjob </p>
-                <form action="" method="get">
-                    <input name="s" placeholder="Искать здесь..." type="search">
-                    <button type="submit">Поиск</button>
-                </form>
                 <div class = "navigation">
                     <form action="catalog.html" target="_blank">
                         <button class="header_btn"> каталог </button>
@@ -36,17 +34,26 @@
                 </div>
             </div>
         </header>
-        <script src="js/header.js"></script>
     </div>
-    <script src="./js/header.js"></script>
-    <div class ="container" class = "sign_up">
-        <form>
-            <label>login/e-mail</label>
-            <input type="text" class = "enter" name="login" placeholder="enter login">
-            <label>password</label>
-            <input type="password" class = "enter" name="password" placeholder="enter password">
-            <button type="submit">Enter</button>
-        </form>
-    </div>
+
+    <div class="container">
+        <form id="form" action="/">
+            <div class="input-control">
+                <label for="login">Login Or email</label>
+                <input id="login"name="login" type="text" placeholder="Введите логин или почту">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="text" placeholder="Введите пароль">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="text" placeholder="Повторите пароль">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Ready</button>
+        </div>
 </body>
 </html>
