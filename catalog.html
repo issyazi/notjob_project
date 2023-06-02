@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>notjob - find not a job</title>
 </head>
@@ -13,27 +14,28 @@
             <div class = "header_container">
                 <p href="index.html" class = "logo"> notjob </p>
                 <div class = "navigation">
-                    <form action="catalog.html" target="_blank">
-                        <button class="header_btn"> каталог </button>
+                    <form action="catalog.html" >
+                        <button class="header_btn"> Заказы </button>
                     </form>
-                    <form action="sign_in.html" target="_blank">
-                        <button class="header_btn"> войти </button>
+                    <form action="feed.html" >
+                        <button class="header_btn"> Лента </button>
                     </form>
-                    <form action="sign_up.html" target="_blank">
-                        <button class="header_btn"> зарегистрироваться</button>
+                    <form action="sign_in.html" >
+                        <button class="header_btn"> Войти </button>
                     </form>
-                    <div class="dropdown">
-                        <button class="dropbtn">язык</button>
-                        <div class="dropdown-content">
-                          <a href="#">Английский</a>
-                          <a href="#">Русский </a>
-                        </div>
-                    </div>
+                    <form action="sign_up.html" >
+                        <button class="header_btn"> Зарегистрироваться</button>
+                    </form>
                 </div>
             </div>
         </header>
-    </div>
-    <div class = "container">
+        <div class = "search-container">
+            <form class = "search-box">
+                    <input type="text" class = "search-input" placeholder="Искать здесь...">
+                    <button type="submit" class = "search-button"></button>    
+            </form>
+            <button class = "filters"> ф </button>
+        </div>
         <div class = "container_ad">
             <div>
                 <p> Разработка структуры сайта для компании </p>
@@ -48,7 +50,6 @@
                 <p> 100$ </p>
             </div>
         </div>
-
         <div class = "container_ad">
             <div>
                 <p> Разработка структуры сайта для компании </p>
@@ -64,6 +65,5 @@
             </div>
         </div>
     </div>
-    
 </body>
 </html>
