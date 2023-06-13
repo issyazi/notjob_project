@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="icons/icon.ico" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>notjob - find not a job</title>
 </head>
 <body>
     <div class = "container">
         <header class = "header">
+            <script src="/js/header.js"> </script>
             <div class = "header_container">
                 <p href="index.html" class = "logo"> notjob </p>
                 <div class = "navigation">
@@ -19,14 +23,14 @@
                     <form action="feed.html" >
                         <button class="header_btn"> Лента </button>
                     </form>
-                    <form action="favorites.html" >
-                        <button class="header_btn"> Избранное </button>
+                    <form action="favorites.html">
+                        <button class="header_btn favorite-button"> </button>
                     </form>
                     <form action="messenger.html" >
-                        <button class="header_btn"> Сообщения </button>
+                        <button class="header_btn messanger-button"></button>
                     </form>
                     <div class="dropdown">
-                        <button class="dropbtn"> Аккаунт</button>
+                        <button class="dropbtn user-button"></button>
                         <div class="dropdown-content">
                           <a href="#"> Дневной режим </a>
                           <a href="sign_in.html"> Выйти </a>
