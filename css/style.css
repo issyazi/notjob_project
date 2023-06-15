@@ -13,7 +13,7 @@ button {
 img {
     object-fit: cover;
 }
-p {
+p, span, div {
     margin-block-start: 0px;
     margin-block-end: 0px;
     font-family: "Overpass";
@@ -26,6 +26,14 @@ label {
     font-weight: 600;
     margin: 50px 0 50px 0;
 }
+body::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    /* цвет плашки */
+    border-radius: 20px;
+    border: 2px solid #030410;       /* закругления плашки */
+  }
 @font-face {
 	font-family: Overpass; 
 	src: url(/fonts/Overpass/Overpass-VariableFont_wght.ttf);
@@ -349,12 +357,15 @@ a {
 /* Поисковая строка */
 * {box-sizing: border-box;}
 .search-box {
+    padding: 2px;
     position: relative;
     margin: 0px 0 20px 0;
     background-color: white;
-    border-radius: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
 }
-.search-input, .search-button, .filters-button, .user-button,.favorite-button, .messanger-button, .favorite-add-button {
+.search-input, .search-button, .filters-button, .user-button,.favorite-button, .messanger-button, .favorite-add-button, .comment-input {
     border: none;
     outline: none;
     background: transparent;
@@ -472,9 +483,7 @@ a {
 
 /* FONTS */
 .roboto-20px{
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 18px;
+    
 }
 .overpass-16px{
     font-family: 'Overpass';
@@ -604,14 +613,14 @@ a {
 }
 .scroll_users {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 .user-post{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px 20px;
-    gap: 20px;
+    gap: 10px;
 }
 .post{
     width: 500px;
@@ -639,22 +648,86 @@ a {
     color: white;
 }
 .like-button:hover::before {
-    color: #057D9F;
+    color: #d3007f;
 }
-
+.head-comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
 .comments{
     margin: 0 0 40px 0;
     border-radius: 5px;
     border: 2px white solid;
     width: 600px;
+    height: var(--comment-height);
+    padding: 20px;
 }
 .comments-block{
     display: flex;
     flex-direction: column;
-
+    overflow-y: auto;
+    width: 600px;
 }
-.title-feed{
-    background-color: #4CAF50;
+.title{
     font-size: 24px;
     height: 60px;
 }
+.comment-input{
+    display: inline-block;
+    width: 600px;
+    min-height: 30px;
+    padding: 2px 50px 2px 20px;
+    color: black;
+}
+.comment-input[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #FFFFFF;
+  }
+.sent-button{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+.sent-button:before {
+    content: "\f1d8";
+    font-family: FontAwesome;
+    font-size: 24px;
+    background-color: #FFFFFF;
+    color: black;
+}
+.sent-button:hover::before {
+    color: #d3007f;
+}
+.date {
+    color:#a3a3a3
+
+}
+.user-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+/* comments */
+
+.input {
+    width: auto;
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px dotted #dee1e5;
+    color: #242A37;
+    padding: 2px;
+    line-height: 34px;
+  }
+  
+  .input[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #dee1e5;
+  }
