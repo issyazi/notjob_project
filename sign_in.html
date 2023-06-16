@@ -34,15 +34,21 @@
         <script src="js/header.js"></script>
     </div>
     <script src="./js/header.js"></script>
-    <div class ="container" class = "sign_up">
+    <div class ="container sign_in">
         <form>
             <label> Вход </label>
-            <input type="text" class = "enter" name="login" placeholder="enter login">
-            <input type="password" class = "enter" name="password" placeholder="enter password">
-            
+            <div class = "placeholders">  
+                <input type="text" class = "enter" name="login" placeholder="enter login">
+                <input type="password" class = "enter" name="password" placeholder="enter password">
+            </div>
+            <p class = "error_str"> Проверка </p>
             <div class = "nav-enter">
                 <button type="submit" class="dark_btn_s">Войти </button>
                 <button class = "dark_btn_line"> Забыли пароль? </button>
+            </div>
+            <div class = "nav-enter">
+                <p>Нет аккаунта?</p> 
+                <button class = "dark_btn_line"> Создать аккаунт</button>
             </div>
             <a href="account(1)_contractor.html" class = "logo"> enter (fake) </a>
         </form>

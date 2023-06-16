@@ -39,7 +39,10 @@
                 </div>
             </div>
         </header>
-        <label> Лента работ</label>
+        <div style = "display: flex; align-items: baseline; justify-content: space-between;">
+            <label> Лента </label>
+            <button class = "dark_btn_s"> Создать пост </button>
+        </div>
         <div class = "feed">
             <script src="js/height_comment_block.js"></script>
             <div id = "height" class = "scroll_users">
@@ -52,58 +55,139 @@
                     <p class = "like-button"></p>
                     <p> 223 </p>
                 </div>
-                <div>
-                    <p class = "roboto-20px"> Ararat </p>
-                    <p>  ааааааааааааааааааааааааааа
-                    </p>
+                <div class = "post-description">
+                    <p class = "roboto-20px"> Ararat: </p>
+                    <p class = "post-text">  Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
+                        Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                        Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque. </p>
                 </div>
             </div>
-            <div class = "comments-block">
+            <div class = "comments-block-input">
                 <p class = "title"> Комментарии </p>
-                <div id = "comment" class = "comments">
-                    <div class = "head-comment">
-                        <a href = "#" class = "user-comment">
-                            <img class = "avatar-60px" src="pics/avatar1.jpeg">
-                            <p class = "roboto-20px"> Ararat </p>
-                        </a>
-                        <span class="date">16 ноября 2015, 13:43</span>
+                <div id = "comments" class = "comments-block styled-scrollbars">
+                    <div class = "comments">
+                        <div class = "head-comment">
+                            <a href = "#" class = "user-comment">
+                                <img class = "avatar-60px" src="pics/avatar1.jpeg">
+                                <p class = "roboto-20px"> Ararat </p>
+                            </a>
+                            <span class="date">16 ноября 2015, 13:43</span>
+                        </div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                            Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                        </div>
                     </div>
-                    <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
-                        Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
-                        Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                    <div class = "comments">
+                        <div class = "head-comment">
+                            <a href = "#" class = "user-comment">
+                                <img class = "avatar-60px" src="pics/avatar1.jpeg">
+                                <p class = "roboto-20px"> Ararat </p>
+                            </a>
+                            <span class="date">16 ноября 2015, 13:43</span>
+                        </div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
+                            Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                            Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                        </div>
                     </div>
-                </div>
-                <div id = "comment" class = "comments">
-                    <div class = "head-comment">
-                        <a href = "#" class = "user-comment">
-                            <img class = "avatar-60px" src="pics/avatar1.jpeg">
-                            <p class = "roboto-20px"> Ararat </p>
-                        </a>
-                        <span class="date">16 ноября 2015, 13:43</span>
+                    <div class = "comments">
+                        <div class = "head-comment">
+                            <a href = "#" class = "user-comment">
+                                <img class = "avatar-60px" src="pics/avatar1.jpeg">
+                                <p class = "roboto-20px"> Ararat </p>
+                            </a>
+                            <span class="date">16 ноября 2015, 13:43</span>
+                        </div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
+                            Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                            Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                        </div>
                     </div>
-                    <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
-                        Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
-                        Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
-                    </div>
-                </div>
-                <div id = "comment" class = "comments">
-                    <div class = "head-comment">
-                        <a href = "#" class = "user-comment">
-                            <img class = "avatar-60px" src="pics/avatar1.jpeg">
-                            <p class = "roboto-20px"> Ararat </p>
-                        </a>
-                        <span class="date">16 ноября 2015, 13:43</span>
-                    </div>
-                    <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
-                        Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
-                        Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                    <div class = "comments">
+                        <div class = "head-comment">
+                            <a href = "#" class = "user-comment">
+                                <img class = "avatar-60px" src="pics/avatar1.jpeg">
+                                <p class = "roboto-20px"> Ararat </p>
+                            </a>
+                            <span class="date">16 ноября 2015, 13:43</span>
+                        </div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
+                            Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                            Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                        </div>
                     </div>
                 </div>
                 <form class = "search-box">
-                    <div type="text" class = "comment-input" contenteditable="true"  placeholder=""></div>
+                    <div type="text" class = "comment-input comment-text" contenteditable="true"  placeholder=""></div>
                     <p type="submit" class = "sent-button"></p>    
                 </form>
-                <div class="input" contenteditable="true" placeholder="John Doe"></div>
+            </div>
+        </div>
+        <div class = "feed">
+            <script src="js/height_comment_block.js"></script>
+            <div id = "height" class = "scroll_users">
+                <a href ="#" class = "user-post">
+                    <img src = "pics/banner-example.jpg" class = "avatar-60px">
+                    <p class = "roboto-20px"> Ararat </p>
+                </a>
+                <img src = "pics/ahmad.jpg" class = "post">
+                <div class = "likes">
+                    <p class = "like-button"></p>
+                    <p> 223 </p>
+                </div>
+                <div class = "post-description">
+                    <p class = "roboto-20px"> Ararat: </p>
+                    <p class = "post-text">  Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
+                        Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                        Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque. </p>
+                </div>
+            </div>
+            <div class = "comments-block-input">
+                <p class = "title"> Комментарии </p>
+                <div id = "comments" class = "comments-block styled-scrollbars">
+                    <div class = "comments">
+                        <div class = "head-comment">
+                            <a href = "#" class = "user-comment">
+                                <img class = "avatar-60px" src="pics/avatar1.jpeg">
+                                <p class = "roboto-20px"> Ararat </p>
+                            </a>
+                            <span class="date">16 ноября 2015, 13:43</span>
+                        </div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                            Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                        </div>
+                    </div>
+                    <div class = "comments">
+                        <div class = "head-comment">
+                            <a href = "#" class = "user-comment">
+                                <img class = "avatar-60px" src="pics/avatar1.jpeg">
+                                <p class = "roboto-20px"> Ararat </p>
+                            </a>
+                            <span class="date">16 ноября 2015, 13:43</span>
+                        </div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
+                            Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                            Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                        </div>
+                    </div>
+                    <div class = "comments">
+                        <div class = "head-comment">
+                            <a href = "#" class = "user-comment">
+                                <img class = "avatar-60px" src="pics/avatar1.jpeg">
+                                <p class = "roboto-20px"> Ararat </p>
+                            </a>
+                            <span class="date">16 ноября 2015, 13:43</span>
+                        </div>
+                        <div class="comment-text">Lorem ipsum dolor sit amet. Blanditiis praesentium voluptatum deleniti atque. Autem vel illum, qui blanditiis praesentium voluptatum deleniti atque corrupti. 
+                            Dolor repellendus cum soluta nobis. Corporis suscipit laboriosam, nisi ut enim. Debitis aut perferendis doloribus asperiores repellat. sint, obcaecati cupiditate non numquam eius.
+                            Itaque earum rerum facilis. Similique sunt in ea commodi. Dolor repellendus numquam eius modi. Quam nihil molestiae consequatur, vel illum, qui ratione voluptatem accusantium doloremque.
+                        </div>
+                    </div>
+                </div>
+                <form class = "search-box">
+                    <div type="text" class = "comment-input comment-text" contenteditable="true"  placeholder=""></div>
+                    <p type="submit" class = "sent-button"></p>    
+                </form>
             </div>
         </div>
     </div>

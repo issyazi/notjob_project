@@ -9,6 +9,7 @@ header{
 button {
     border: none;
     border-style: none;
+    background-color: transparent;
 }
 img {
     object-fit: cover;
@@ -359,7 +360,7 @@ a {
 .search-box {
     padding: 2px;
     position: relative;
-    margin: 0px 0 20px 0;
+    margin: 10px 0 20px 0;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -382,6 +383,9 @@ a {
     top: 0;
     right: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
 }
 .search-button:before {
     content: "\f002";
@@ -391,12 +395,10 @@ a {
 }
 
 .filters-button{
-    margin: 0px 10px 20px 0;
+    margin: 0px 10px 10px 0;
     top: 0;
     right: 40px;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
 }
 
 .filters-button:before {
@@ -411,7 +413,7 @@ a {
 .search-container{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding: 0px;
     gap: 30px;
@@ -583,7 +585,6 @@ a {
     gap: 50px;
   }
   .section {
-    overflow-x: auto;
     scroll-snap-type: y mandatory;
     height: 100%;
     width: 100%;
@@ -610,10 +611,12 @@ a {
 .feed {
     display:flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .scroll_users {
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 .user-post{
     display: flex;
@@ -626,6 +629,7 @@ a {
     width: 500px;
     height: 500px;
 }
+.post
 .like-button {
     top: 0;
     right: 10px;
@@ -657,18 +661,33 @@ a {
     padding-bottom: 10px;
 }
 .comments{
-    margin: 0 0 40px 0;
-    border-radius: 5px;
-    border: 2px white solid;
-    width: 600px;
-    height: var(--comment-height);
+    margin-top: 10px;
+    width: 570px;
     padding: 20px;
+    margin-right: 20px;
+    border-left: 1px solod white;
+    border-radius: 10px;
+}
+.comments-block-input{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-left: 1px solod white;
 }
 .comments-block{
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     width: 600px;
+    height: 550px
+}
+.tags-block-ad{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 400px;
+    color: #030410;
+
 }
 .title{
     font-size: 24px;
@@ -689,6 +708,9 @@ a {
 .sent-button{
     height: 30px;
     width: 30px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
     position: absolute;
     top: 0;
     right: 10px;
@@ -702,11 +724,10 @@ a {
     color: black;
 }
 .sent-button:hover::before {
-    color: #d3007f;
+    color: #057D9F;
 }
 .date {
     color:#a3a3a3
-
 }
 .user-comment{
     display: flex;
@@ -730,4 +751,110 @@ a {
     content: attr(placeholder);
     display: block;
     color: #dee1e5;
+  }
+  .post-description{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: var(--comments-height);
+
+  }
+  .post-description[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    display: block;
+    color: #FFFFFF;
+  }
+  .post-text {
+    margin-left: 5px;
+    word-break:break-all;
+  }
+  .styled-scrollbars {
+    /* плашка-бегунок и фон */
+    scrollbar-color: white;
+    border-radius: 5px;
+  }
+  .styled-scrollbars::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px; /* в основном для вертикальных полос прокрутки */
+     /* в основном для горизонтальных полос прокрутки */
+  }
+  .styled-scrollbars::-webkit-scrollbar-thumb { /* плашка-бегунок */
+    background: white;
+    border-radius: 5px;
+  }
+  .styled-scrollbars::-webkit-scrollbar-track { /* фон */
+    background: #030410;
+  }
+  .comment-text__{
+    color: #030410;
+  }
+  .favorites{
+    display: flex;
+    background-color: #057D9F;
+    width: 1200px;
+    height: 50px;
+    justify-content: space-around;
+  }
+  .new-ad{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  /* MODAL WINDOW */
+  .modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: all .09s ease-out;
+  }
+  .modal .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;   
+    height: 100%;
+    background-color: #030410;
+    opacity: 0.7;
+    z-index: 0;
+  }
+  .modal.show{
+    visibility: visible;
+    z-index: 100;
+    opacity: 1;
+  }
+  .modal-window{
+    position: relative;
+    z-index:2;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+    background-color: white;
+    padding: 30px;
+    margin-top: -40px;
+    transition: inherit;
+  }
+  .modal.show .modal-window{
+    margin-top: 0;
+  }
+  .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .close-btn{
+    opacity: 1;
+  }
+  .modal-text{
+    color: #030410;
   }

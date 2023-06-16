@@ -41,7 +41,87 @@
         </header>
         <div style = "display: flex; align-items: baseline; justify-content: space-between;">
             <label> Заказы </label>
-            <button class = "dark_btn_s"> Создать объявление </button>
+            <button data-easy-toggle="#modalWin" data-easy-class ="show" class = "dark_btn_s"> Создать объявление </button>
+            <div id = "modalWin" class = "modal">
+                <div class = "modal-window">
+                    <label class = "modal-text"> Новое объявление</label>
+                    <button class="close-btn" data-easy-toggle="#modalWin" data-easy-class ="show"> X </button>
+                    <div class ="new-ad">
+                        <label style="margin-top: 30px;">Новое объявление</label>
+                        <input type="text" class = "enter" name="login" placeholder="Название*">
+                        <input class = "enter"  placeholder="Описание">
+                        <input class = "enter"  placeholder="Оплата">
+                        Теги:
+                        <p class="tags-block-ad">
+                            <input type="checkbox" value="">3D</input>
+                            <input type="checkbox" value="">AR/VR<br>
+                            <input type="checkbox" value="">CGI<br>
+                            <input type="checkbox" value="">Анимация<br>
+                            <input type="checkbox" value="">Архитектура<br>
+                            <input type="checkbox" value="">Арт - директор<br>
+                            <input type="checkbox" value="">Анимационный дизайн<br>
+                            <input type="checkbox" value="">Визуализация<br>
+                            <input type="checkbox" value="">Веб-дизайн<br>
+                            <input type="checkbox" value="">Графический дизайн<br>
+                            <input type="checkbox" value="">Дизайн<br>
+                            <input type="checkbox" value="">Дизайн автомобилей<br>
+                            <input type="checkbox" value="">Дизайн игрушек<br>
+                            <input type="checkbox" value="">Дизайн интерьера<br>
+                            <input type="checkbox" value="">Дизайн логотипов<br>
+                            <input type="checkbox" value="">Дизайн персонажей<br>
+                            <input type="checkbox" value="">Дизайн продуктов<br>
+                            <input type="checkbox" value="">Дизайн ювелирных изделий<br>
+                            <input type="checkbox" value="">Документы<br>
+                            <input type="checkbox" value="">Журналистика<br>
+                            <input type="checkbox" value="">Звуковой дизайн<br>
+                            <input type="checkbox" value="">Игровой дизайн<br>
+                            <input type="checkbox" value="">Иллюстрация<br>
+                            <input type="checkbox" value="">Инфографика<br>
+                            <input type="checkbox" value="">Информационная архитектура<br>
+                            <input type="checkbox" value="">Каллиграфия<br>
+                            <input type="checkbox" value="">Кинематография<br>
+                            <input type="checkbox" value="">Коллаж<br>
+                            <input type="checkbox" value="">Комикс<br>
+                            <input type="checkbox" value="">Концептуальное искусство<br>
+                            <input type="checkbox" value="">Копирайтинг<br>
+                            <input type="checkbox" value="">Креативный директор<br>
+                            <input type="checkbox" value="">Кулинарное искусство<br>
+                            <input type="checkbox" value="">Кустарные промыслы<br>
+                            <input type="checkbox" value="">Ландшафтный дизайн<br>
+                            <input type="checkbox" value="">Макияж<br>
+                            <input type="checkbox" value="">Мода<br>
+                            <input type="checkbox" value="">Моделирование<br>
+                            <input type="checkbox" value="">Музыка<br>
+                            <input type="checkbox" value="">Одежда<br>
+                            <input type="checkbox" value="">Оформление сцены<br>
+                            <input type="checkbox" value="">Программирование<br>
+                            <input type="checkbox" value="">Промышленный дизайн<br>
+                            <input type="checkbox" value="">Работа по дереву<br>
+                            <input type="checkbox" value="">Раскадровка<br>
+                            <input type="checkbox" value="">Редактура<br>
+                            <input type="checkbox" value="">Режиссура<br>
+                            <input type="checkbox" value="">Реклама<br>
+                            <input type="checkbox" value="">Ретушь<br>
+                            <input type="checkbox" value="">Рисование<br>
+                            <input type="checkbox" value="">Скульптура<br>
+                            <input type="checkbox" value="">Создание композиций из цветов<br>
+                            <input type="checkbox" value="">Создание эскизов<br>
+                            <input type="checkbox" value="">Стилизация<br>
+                            <input type="checkbox" value="">Текстильный дизайн<br>
+                            <input type="checkbox" value="">Типографика<br>
+                            <input type="checkbox" value="">Уличное искусство<br>
+                            <input type="checkbox" value="">Фотография<br>
+                            <input type="checkbox" value="">Фотография продуктов<br>
+                        </p>
+                        <button type="submit" class = "register-btn">Ready</button>
+                        <p style="margin-top: 20px;">
+                        Have account yet? - <a href="login.php" class = "back">Enter</a>
+                        </p>
+                    </div>
+                </div>
+                <div class = "overlay" data-easy-toggle="#modalWin" data-easy-class ="show"> </div>
+                <script src="js/modalWin.js"></script>
+            </div>
         </div>
         <div class = "search-container">
             <form class = "search-box">
